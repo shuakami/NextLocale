@@ -1,0 +1,30 @@
+{
+    "name": "@shuakami/next-locale",
+    "version": "1.0.0",
+    "description": "A simple and powerful i18n translation system for Next.js 14+.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Shuakami/next-locale.git"
+    },
+    "author": "Shuakami",
+    "license": "MIT",
+    "private": false,
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "build": "tsc"
+    },
+    "devDependencies": {
+      "typescript": "^5.x.x"
+    },
+    "dependencies": {
+      "react": "^18.x.x",
+      "next": "^14.x.x",
+      "js-cookie": "^3.x.x",
+      "framer-motion": "^10.x.x"
+    }
+  }
+  
