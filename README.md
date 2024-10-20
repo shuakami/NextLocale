@@ -17,17 +17,17 @@ The main goal of NextLocale is that with just a few steps of configuration, you 
 First, install the library in your project:
 
 ```bash
-pnpm add @shuakami/next-locale
+pnpm add @sdjzwiki/next-locale
 ```
 
 Or if you're using npm or yarn:
 
 ```bash
-npm install @shuakami/next-locale
+npm install @sdjzwiki/next-locale
 ```
 
 ```bash
-yarn add @shuakami/next-locale
+yarn add @sdjzwiki/next-locale
 ```
 
 ## Step 1: Configure Language Files
@@ -132,7 +132,7 @@ Next, you need to wrap the root of your app with a `LanguageProvider` to provide
 Open your `_app.tsx` file and wrap the `LanguageProvider`:
 
 ```tsx
-import { LanguageProvider } from '@shuakami/next-locale';
+import { LanguageProvider } from '@sdjzwiki/next-locale';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -148,7 +148,7 @@ export default MyApp;
 If you're using `layout.tsx`, it works similarly:
 
 ```tsx
-import { LanguageProvider } from '@shuakami/next-locale';
+import { LanguageProvider } from '@sdjzwiki/next-locale';
 
 export default function RootLayout({
                                        children,
@@ -175,7 +175,7 @@ Here are two demos to help you understand how to use it:
 Suppose you have a component that needs to display different text based on the current language:
 
 ```tsx
-import { useTranslation } from '@shuakami/next-locale';
+import { useTranslation } from '@sdjzwiki/next-locale';
 
 const Component = () => {
     const { t } = useTranslation();
@@ -193,7 +193,7 @@ export default Component;
 ### 2. Getting and Switching Languages
 
 ```tsx
-import { useTranslation } from '@shuakami/next-locale';
+import { useTranslation } from '@sdjzwiki/next-locale';
 import { defaultLanguages } from '@/lib/languages';
 
 const LanguageSwitcher = () => {

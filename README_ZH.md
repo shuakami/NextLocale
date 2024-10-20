@@ -17,16 +17,16 @@ NextLocale 的主要目标是：你只需要几步配置，立马能为你的 Ne
 先在你的项目中安装这个库：
 
 ```bash
-pnpm add @shuakami/next-locale
+pnpm add @sdjzwiki/next-locale
 ```
 
 或者你用 npm/yarn：
 
 ```bash
-npm install @shuakami/next-locale
+npm install @sdjzwiki/next-locale
 ```
 ```bash
-yarn add @shuakami/next-locale
+yarn add @sdjzwiki/next-locale
 ```
 
 ## 第一步：配置语言文件
@@ -135,7 +135,7 @@ export const config = {
 打开你的 `_app.tsx` 文件，包裹 `LanguageProvider`：
 
 ```tsx
-import { LanguageProvider } from '@shuakami/next-locale';
+import { LanguageProvider } from '@sdjzwiki/next-locale';
 
 function MyApp({ Component, pageProps }) {
     return (
@@ -151,7 +151,7 @@ export default MyApp;
 如果你是用 `layout.tsx`，也差不多这样操作。
 
 ```tsx
-import { LanguageProvider } from '@shuakami/next-locale';
+import { LanguageProvider } from '@sdjzwiki/next-locale';
 
 export default function RootLayout({
                                        children,
@@ -180,7 +180,7 @@ export default function RootLayout({
 假设你有一个组件，需要根据当前语言显示不同的文本：
 
 ```tsx
-import { useTranslation } from '@shuakami/next-locale';
+import { useTranslation } from '@sdjzwiki/next-locale';
 
 const Component = () => {
     const { t } = useTranslation();
@@ -198,7 +198,7 @@ export default Component;
 ### 2. 获取并切换语言
 
 ```tsx
-import { useTranslation } from '@shuakami/next-locale';
+import { useTranslation } from '@sdjzwiki/next-locale';
 import { defaultLanguages } from '@/lib/languages';
 
 const LanguageSwitcher = () => {

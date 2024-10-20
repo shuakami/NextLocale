@@ -1,5 +1,5 @@
 {
-    "name": "@shuakami/next-locale",
+    "name": "@sdjzwiki/next-locale",
     "version": "1.0.0",
     "description": "A simple and powerful i18n translation system for Next.js 14+.",
     "main": "dist/index.js",
